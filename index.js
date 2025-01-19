@@ -27,6 +27,6 @@ app.use('/usuarios',usuarios);
 app.use('/recetas',recetas);
 
 // Iniciamos el servidor en el puerto especificado en las variables de entorno (archivo .env)
-app.listen(process.env.PORT,()=>{
+app.listen(process.env.DB_PORT,()=>{
     logger.info('El servidor está funcionando.'); // Registra un mensaje en los logs cuando el servidor está funcionando
 })
